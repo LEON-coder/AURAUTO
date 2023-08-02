@@ -785,8 +785,7 @@ footer {
 }
 
 .footer__ul {
-  color     : white;
-  list-style: circle;
+  color: white;
 }
 
 .footer_ul li {
@@ -1505,13 +1504,76 @@ h2 {
   display: none;
 }
 
+
+
+
+
+
+
 @media (max-width: 1000px) {
   .show_1000 {
     display: block;
   }
 }
 
-@media (max-width: 425px) {
+
+
+
+@media screen and (max-width: 1440px) {
+  .partners__slider .slider__container .slider__item:nth-child(2) {
+    margin-left: calc(10% - 140px);
+  }
+
+  .partners__slider .slider__container .slider__item:nth-child(3) {
+    margin-left: calc(28% - 140px);
+  }
+
+  .partners__slider .slider__container .slider__item:nth-child(4) {
+    margin-left: calc(51% - 190px);
+  }
+
+  .partners__slider .slider__container .slider__item:nth-child(5) {
+    margin-left: calc(67% - 140px);
+  }
+
+  .partners__slider .slider__container .slider__item:nth-child(6) {
+    margin-left: calc(74% - -20px);
+  }
+
+  .partners__slider .slider__container .slider__item:nth-child(7) {
+    margin-left: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .partners__slider .slider__container .slider__item:nth-child(2) {
+    margin-left: calc(13% - 140px);
+  }
+
+  .partners__slider .slider__container .slider__item:nth-child(3) {
+    margin-left: calc(37% - 140px);
+  }
+
+  .partners__slider .slider__container .slider__item:nth-child(4) {
+    margin-left: calc(66% - 190px);
+  }
+
+  .partners__slider .slider__container .slider__item:nth-child(5) {
+    margin-left: calc(84% - 140px);
+  }
+
+  .partners__slider .slider__container .slider__item:nth-child(6) {
+    margin-left: calc(95% - -20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
   body {
     width: 100%;
   }
@@ -1539,60 +1601,63 @@ h2 {
     width        : 100%;
     margin-bottom: 30px;
   }
-}
 
-@media (max-width: 768px) {
-  body {
-    width: 100%;
+  .advantages__item {
+    width        : 95%;
+    margin-bottom: 34px;
   }
-}
 
-@media (max-width: 1024px) {
+  .advantages__p {
+    color      : #000;
+    font-family: Roboto;
+    font-size  : 18px;
+    font-style : normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align : center;
+    width      : auto;
+  }
+
+  .auto-oficial-diler {
+    width: 280px;
+  }
+
+  #partners h2 {
+    line-height: 50px;
+    width      : 60%;
+  }
+
   .partners__slider .slider__container .slider__item:nth-child(2) {
-    margin-left: calc(13% - 140px);
+    margin-left: calc(26% - 140px);
   }
 
   .partners__slider .slider__container .slider__item:nth-child(3) {
-    margin-left: calc(37% - 140px);
+    margin-left: calc(128% - 140px);
   }
 
   .partners__slider .slider__container .slider__item:nth-child(4) {
-    margin-left: calc(66% - 190px);
+    margin-left: calc(89% - 190px);
   }
 
   .partners__slider .slider__container .slider__item:nth-child(5) {
-    margin-left: calc(84% - 140px);
+    margin-left: calc(134% - 140px);
   }
 
-  .partners__slider .slider__container .slider__item:nth-child(6) {
-    margin-left: calc(95% - -20px);
-  }
-}
-
-
-
-@media screen and (max-width: 1440px) {
-  .partners__slider .slider__container .slider__item:nth-child(2) {
-    margin-left: calc(10% - 140px);
+  .help {
+    width          : 311px;
+    text-align     : center;
+    display        : flex;
+    justify-content: center;
+    font-size      : 26px;
+    margin-bottom  : 30px;
   }
 
-  .partners__slider .slider__container .slider__item:nth-child(3) {
-    margin-left: calc(28% - 140px);
-  }
-
-  .partners__slider .slider__container .slider__item:nth-child(4) {
-    margin-left: calc(51% - 190px);
-  }
-
-  .partners__slider .slider__container .slider__item:nth-child(5) {
-    margin-left: calc(67% - 140px);
-  }
-
-  .partners__slider .slider__container .slider__item:nth-child(6) {
-    margin-left: calc(74% - -20px);
-  }
-
-  .partners__slider .slider__container .slider__item:nth-child(7) {
-    margin-left: 100%;
+  .footer__p {
+    text-align     : center;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    width          : 85%;
   }
 }
