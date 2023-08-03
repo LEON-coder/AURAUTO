@@ -1642,6 +1642,12 @@ h2 {
     width: 100%;
   }
 
+  .header__bottom {
+    margin-top   : 26px;
+    padding-left : 10px;
+    padding-right: 10px;
+  }
+
   .content {
     flex-grow      : 1;
     display        : flex;
@@ -1678,6 +1684,10 @@ h2 {
     justify-content: space-between;
     align-items    : center;
     margin         : 46px 0;
+  }
+
+  .partners__slider .slider__container .slider__item:nth-child(4) {
+    margin-left: calc(50% - 140px);
   }
 
   .main__square {
