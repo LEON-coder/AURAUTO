@@ -1,9 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Cormorant:wght@500&family=Roboto:wght@400;700&display=swap");
+
+
+.content_catalog {
+	display        : flex;
+	flex-direction : column;
+	justify-content: center;
+	width          : 100%;
+	max-width      : 1240px;
+	margin         : 0px auto;
+}
+
+
 .content-bread-wrap {
 	flex-grow     : 1;
 	display       : flex;
 	flex-direction: column;
-	min-height    : 120vh;
 	width         : 1240px;
+	height        : auto;
 }
 
 header {
@@ -23,4 +36,359 @@ header {
 	letter-spacing: 0em;
 	text-align    : left;
 	margin-right  : 20px;
+	color         : #969696;
+}
+
+.auto-belarus__wrap {
+	display: flex;
+	height : 100px;
+}
+
+.auto-belarus {
+	width         : 620px;
+	/* height     : 100px; */
+	font-family   : Roboto;
+	font-size     : 48px;
+	font-weight   : 700;
+	line-height   : 65px;
+	letter-spacing: 0em;
+	text-align    : left;
+	color         : #000000;
+}
+
+.auto-belarus__total {
+	font-family   : Roboto;
+	font-size     : 48px;
+	font-weight   : 700;
+	line-height   : 65px;
+	letter-spacing: 0em;
+	text-align    : left;
+	color         : #FECD00;
+	margin-left   : 24px;
+}
+
+.block-models-auto-wrap {
+	display: flex;
+}
+
+.block-models-auto__selection-mode {
+	display       : flex;
+	flex-direction: column;
+	width         : 262px;
+}
+
+
+.models-block-describe {
+	display       : flex;
+	flex-direction: column;
+	margin-left   : 48px;
+}
+
+.models-block-wrap {
+	display: flex;
+	width  : 929px;
+}
+
+.models_name {
+	display: flex;
+}
+
+.models-block {
+	display       : flex;
+	flex-direction: column;
+	width         : 232px;
+}
+
+.you-looked-block {
+	display       : flex;
+	flex-direction: column;
+}
+
+.you-looked-block__headline {
+	display        : flex;
+	width          : 583px;
+	height         : 65px;
+	flex-direction : column;
+	justify-content: center;
+	flex-shrink    : 0;
+	color          : #000;
+	font-family    : Roboto;
+	font-size      : 20px;
+	font-style     : normal;
+	font-weight    : 700;
+	line-height    : normal;
+}
+
+.you-looked-block__cars {
+	display: flex;
+}
+
+.you-looked-car {
+	display       : flex;
+	flex-direction: column;
+	width         : 170px;
+	height        : 108px;
+	flex-shrink   : 0;
+	margin-right  : 20px;
+}
+
+.you-looked-car:last-child {
+	margin-right: 0;
+}
+
+.you-looked-car__picture-block {}
+
+.name_car {
+	display        : flex;
+	width          : 170px;
+	height         : 31px;
+	flex-direction : column;
+	justify-content: center;
+	flex-shrink    : 0;
+	color          : #EF7820;
+	font-family    : Roboto;
+	font-size      : 13px;
+	font-style     : normal;
+	font-weight    : 700;
+	line-height    : 30px;
+	/* 230.769% */
+}
+
+.cost {
+	display        : flex;
+	width          : 170px;
+	height         : 19px;
+	flex-direction : column;
+	justify-content: center;
+	flex-shrink    : 0;
+	color          : #000;
+	font-family    : Roboto;
+	font-size      : 13px;
+	font-style     : normal;
+	font-weight    : 800;
+	line-height    : 20px;
+	/* 153.846% */
+}
+
+
+.location,
+.last-visit {
+	display        : flex;
+	width          : 170px;
+	height         : 16px;
+	flex-direction : column;
+	justify-content: center;
+	flex-shrink    : 0;
+	color          : #969696;
+	font-family    : Roboto;
+	font-size      : 11px;
+	font-style     : normal;
+	font-weight    : 400;
+	line-height    : 20px;
+	/* 181.818% */
+}
+
+.brand-auto {
+	color       : #000;
+	font-family : Roboto;
+	font-size   : 18px;
+	font-style  : normal;
+	font-weight : 400;
+	line-height : 40px;
+	margin-right: 15px;
+}
+
+.brand-auto__link {
+	color      : #969696;
+	font-family: Roboto;
+	font-size  : 18px;
+	font-style : normal;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.All-auto-button-block {
+	display: flex;
+}
+
+.All-auto-button {
+	color                : #FFF;
+	font-style           : normal;
+	font-family          : Roboto;
+	font-size            : 16px;
+	font-weight          : 400;
+	line-height          : 19px;
+	letter-spacing       : 0em;
+	text-align           : center;
+	width                : 262px;
+	height               : 40px;
+	border-radius        : 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius   : 3px;
+	-ms-border-radius    : 3px;
+	-o-border-radius     : 3px;
+	background-color     : #EF7820;
+	display              : flex;
+	justify-content      : center;
+	align-items          : center;
+}
+
+.selector-mode-auto {
+	display        : flex;
+	margin-top     : 7px;
+	justify-content: space-between;
+}
+
+.used-auto,
+.new-auto {
+	display        : flex;
+	width          : 125px;
+	height         : 40px;
+	flex-direction : column;
+	justify-content: center;
+	flex-shrink    : 0;
+	color          : #969696;
+	text-align     : center;
+	font-family    : Roboto;
+	font-size      : 16px;
+	font-style     : normal;
+	font-weight    : 400;
+	line-height    : normal;
+	border         : 1px solid #969696;
+	border-radius  : 3px border: 1px
+}
+
+.block-models-width {
+	width     : 262px;
+	margin-top: 19px;
+}
+
+.catalog-group {
+	margin-top: 11px;
+}
+
+.catalog-select-group__wrap {
+	display       : flex;
+	flex-direction: column;
+	margin-top    : 11px;
+}
+
+.brand {
+	display        : flex;
+	width          : 185px;
+	height         : 40px;
+	flex-direction : column;
+	justify-content: center;
+	flex-shrink    : 0;
+	color          : #000;
+	font-family    : Roboto;
+	font-size      : 15px;
+	font-style     : normal;
+	font-weight    : 700;
+	line-height    : normal;
+}
+
+.label {
+	display        : flex;
+	width          : 185px;
+	height         : 40px;
+	flex-direction : column;
+	justify-content: center;
+	flex-shrink    : 0;
+	color          : #000;
+	font-family    : Roboto;
+	font-size      : 15px;
+	font-style     : normal;
+	font-weight    : 700;
+	line-height    : normal;
+}
+
+#text-area-input {
+	width        : 264px;
+	height       : 40px;
+	flex-shrink  : 0;
+	border-radius: 3px;
+	border       : 1px solid #969696;
+	background   : #FFF;
+}
+
+.checkbox-label-name {
+	display        : flex;
+	height         : 40px;
+	flex-direction : column;
+	justify-content: center;
+	color          : #000;
+	font-family    : Roboto;
+	font-size      : 15px;
+	font-style     : normal;
+	font-weight    : 700;
+	line-height    : normal;
+}
+
+#text-area-checkbox {
+	width        : 22px;
+	height       : 22px;
+	flex-shrink  : 0;
+	border-radius: 3px;
+	border       : 1px solid #969696;
+	background   : #FFF;
+	margin-right : 7px;
+}
+
+.name-checkbox {
+	display        : flex;
+	width          : 102px;
+	height         : 22px;
+	flex-direction : column;
+	justify-content: center;
+	flex-shrink    : 0;
+	color          : #969696;
+	font-family    : Roboto;
+	font-size      : 13px;
+	font-style     : normal;
+	font-weight    : 400;
+	line-height    : normal;
+}
+
+.checkbox-block {
+	display       : flex;
+	flex-direction: column;
+}
+
+.checkbox-transmission-wrap,
+.checkbox-engine-wrap {
+	display      : flex;
+	flex-wrap    : wrap;
+	margin-bottom: 30px;
+}
+
+.checkbox-transmission,
+.checkbox-engine {
+	display: flex;
+}
+
+.checkbox-transmission:last-child {
+	margin-top: 8px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+input[type="text"] {
+	font-family: inherit;
+	/* 1 */
+	font-size  : inherit;
+	/* 1 */
+	line-height: inherit;
+	/* 1 */
+	margin     : 0;
+	/* 2 */
+}
+
+.checkbox-engine:nth-child(3),
+.checkbox-engine:nth-child(4) {
+	margin-top: 8px;
 }
