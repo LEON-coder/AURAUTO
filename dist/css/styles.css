@@ -13,8 +13,6 @@
   margin         : 30px 0;
 }
 
-//.ad {}
-
 .slider__container {
   position   : relative;
   display    : flex;
@@ -121,7 +119,8 @@
 }
 
 .logo__span {
-  color: black;
+  color         : black;
+  text-transform: uppercase;
 }
 
 .logo_theme_white {
