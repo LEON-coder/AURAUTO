@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Cormorant:wght@500&family=Roboto:wght@400;700&display=swap");
 
+
+
+
+
+
+* {
+  margin : 0;
+  padding: 0;
+}
+
 .slider {
   display        : flex;
   justify-content: space-between;
@@ -1683,12 +1693,9 @@ h2 {
     display        : flex;
     justify-content: space-between;
     align-items    : center;
-    margin         : 46px 0;
+    margin         : 30px 0;
   }
 
-  .partners__slider .slider__container .slider__item:nth-child(4) {
-    margin-left: calc(50% - 140px);
-  }
 
   .main__square {
     width        : 100%;
@@ -1751,13 +1758,23 @@ h2 {
 
   .offers__card {
     width        : 340px;
-    height       : 418px;
+    height       : auto;
     flex-shrink  : 0;
     border-radius: 6px;
     border       : 1px solid #969696;
     background   : #FFF;
-    padding      : 18px;
     box-sizing   : border-box;
+  }
+
+  .offers__card_price {
+    color        : #000;
+    font-family  : Roboto;
+    font-size    : 20px;
+    font-style   : normal;
+    font-weight  : 800;
+    line-height  : normal;
+    height       : auto;
+    margin-bottom: 30px;
   }
 
   .offers__arrows {
@@ -1803,11 +1820,11 @@ h2 {
   }
 
   .partners__slider .slider__container .slider__item:nth-child(3) {
-    margin-left: calc(128% - 140px);
+    margin-left: calc(135% - 140px);
   }
 
   .partners__slider .slider__container .slider__item:nth-child(4) {
-    margin-left: calc(89% - 190px);
+    margin-left: calc(88% - 190px);
   }
 
   .partners__slider .slider__container .slider__item:nth-child(5) {
@@ -1841,7 +1858,7 @@ h2 {
 
   .partners__slider {
     width        : 100%;
-    height       : 60px;
+    height       : auto;
     margin-top   : 40px;
     margin-bottom: 40px;
   }
@@ -1856,11 +1873,31 @@ h2 {
   }
 
   .footer__p {
-    text-align     : center;
+    width          : 311px;
     display        : flex;
     flex-direction : column;
     justify-content: center;
     align-items    : center;
-    width          : 85%;
+    letter-spacing : 0em;
+    text-align     : center;
+    margin-top     : 20px;
+    margin-bottom  : 50px;
   }
+
+  .footer__ul {
+    font-family   : Roboto;
+    font-size     : 18px;
+    font-weight   : 400;
+    line-height   : 30px;
+    letter-spacing: 0em;
+    text-align    : left;
+  }
+
+  .footer__list {
+    align-items   : center;
+    padding-bottom: 0;
+    padding-top   : 20px;
+  }
+
+  .logo {}
 }
