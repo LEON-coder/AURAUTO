@@ -26,9 +26,13 @@ input[type="text"] {
 	/* 2 */
 }
 
-.checkbox-engine:nth-child(3),
-.checkbox-engine:nth-child(4) {
-	margin-top: 8px;
+.checkbox-engine:nth-child(3) {
+	margin-top   : 8px;
+	margin-bottom: 0;
+}
+
+.selection-item:nth-child(2) {
+	margin-bottom: 0;
 }
 
 
@@ -335,6 +339,7 @@ header {
 	display       : flex;
 	flex-direction: column;
 	margin-top    : 11px;
+	width         : 262px;
 }
 
 .brand {
@@ -379,7 +384,7 @@ header {
 	border       : 1px solid #969696;
 	background   : #FFF;
 	box-sizing   : border-box;
-	padding-left : 27px;
+	padding-left : 29px;
 }
 
 #text-area-input {
@@ -390,6 +395,7 @@ header {
 	border       : 1px solid #969696;
 	background   : #FFF;
 	padding-left : 27px;
+	box-sizing   : border-box;
 }
 
 .checkbox-label-name {
@@ -403,6 +409,7 @@ header {
 	font-style     : normal;
 	font-weight    : 700;
 	line-height    : normal;
+	margin-top     : 8px;
 }
 
 #text-area-checkbox {
@@ -437,9 +444,8 @@ header {
 
 .checkbox-transmission-wrap,
 .checkbox-engine-wrap {
-	display      : flex;
-	flex-wrap    : wrap;
-	margin-bottom: 30px;
+	display  : flex;
+	flex-wrap: wrap;
 }
 
 .checkbox-transmission,
@@ -560,14 +566,88 @@ header {
 	display: flex;
 }
 
-#engine-force,
-#value-force,
-#fuel-consumption,
-#overclocking {
+#engine-force-left {
+	width             : 133px;
+	height            : 40px;
+	border-radius     : 3px 0px 0px 3px;
+	-moz-border-radius: 1px;
+	-ms-border-radius : 1px;
+	-o-border-radius  : 1px;
+	border            : 1px solid #969696;
+	padding-left      : 29px;
+}
+
+#engine-force-right {
+	width                     : 133px;
+	height                    : 40px;
+	border-radius             : 0px 3px 3px 0px;
+	border-top-left-radius    : 0px;
+	border-top-right-radius   : 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius : 0px;
+	-moz-border-radius        : 0px 3px 3px 0px;
+	-ms-border-radius         : 0px 3px 3px 0px;
+	-o-border-radius          : 0px 3px 3px 0px;
+	border                    : 1px solid #969696;
+	padding-left              : 29px;
+}
+
+#value-force {
+	width                     : 133px;
+	height                    : 40px;
+	border-radius             : 3px 0px 0px 3px;
+	border-top-left-radius    : 3px;
+	border-top-right-radius   : 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius : 3px;
+	border                    : #969696 1px solid;
+	padding-left              : 29px;
+}
+
+#fuel-consumption-left {
+	width             : 133px;
+	height            : 40px;
+	border-radius     : 3px 0px 0px 3px;
+	-moz-border-radius: 1px;
+	-ms-border-radius : 1px;
+	-o-border-radius  : 1px;
+	border            : 1px solid #969696;
+	padding-left      : 29px;
+}
+
+#fuel-consumption-right {
+	width                     : 133px;
+	height                    : 40px;
+	border-radius             : 0px 3px 3px 0px;
+	border-top-left-radius    : 0px;
+	border-top-right-radius   : 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius : 0px;
+	-moz-border-radius        : 0px 3px 3px 0px;
+	-ms-border-radius         : 0px 3px 3px 0px;
+	-o-border-radius          : 0px 3px 3px 0px;
+	border                    : 1px solid #969696;
+	padding-left              : 29px;
+}
+
+#overclocking-right {
+	width                     : 133px;
+	height                    : 40px;
+	border-radius             : 0px 3px 3px 0px;
+	border-top-left-radius    : 0px;
+	border-top-right-radius   : 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius : 0px;
+	-moz-border-radius        : 0px 3px 3px 0px;
+	-ms-border-radius         : 0px 3px 3px 0px;
+	-o-border-radius          : 0px 3px 3px 0px;
+	border                    : 1px solid #969696;
+	padding-left              : 29px;
+}
+
+
+#overclocking-left {
 	width        : 133px;
-	height       : 40px;
-	flex-shrink  : 0;
-	width        : 133px px;
 	height       : 40px;
 	flex-shrink  : 0;
 	border-radius: 3px 0px 0px 3px;
@@ -581,7 +661,6 @@ header {
 .registration-block {
 	display       : flex;
 	flex-direction: column;
-	margin-top    : 8px;
 }
 
 .owners {
@@ -599,19 +678,6 @@ header {
 	line-height    : normal;
 }
 
-.registration {
-	width      : 262px;
-	height     : 40px;
-	color      : #000;
-	font-family: Roboto;
-	font-size  : 15px;
-	font-style : normal;
-	font-weight: 700;
-	line-height: normal;
-	display    : flex;
-	align-items: center;
-}
-
 #no-matter-registration {
 	display        : flex;
 	width          : 123px;
@@ -627,12 +693,35 @@ header {
 }
 
 #no-matter {
+	color          : #969696;
+	text-align     : center;
+	font-family    : Roboto;
+	font-size      : 13px;
+	font-style     : normal;
+	font-weight    : 400;
+	line-height    : normal;
+	display        : flex;
+	width          : 123px;
+	height         : 40px;
+	flex-direction : column;
+	justify-content: center;
+	flex-shrink    : 0;
+}
+
+#no-matter-pasport {
 	display        : flex;
 	width          : 96px;
 	height         : 40px;
 	flex-direction : column;
 	justify-content: center;
 	flex-shrink    : 0;
+	color          : #FFF;
+	text-align     : center;
+	font-family    : Roboto;
+	font-size      : 13px;
+	font-style     : normal;
+	font-weight    : 400;
+	line-height    : normal;
 	color          : #969696;
 	text-align     : center;
 	font-family    : Roboto;
@@ -643,6 +732,16 @@ header {
 }
 
 #no-matter:hover {
+	background-color: #EF7820;
+	color           : #FFFFFF;
+}
+
+#no-matter-pasport:hover {
+	background-color: #EF7820;
+	color           : #FFFFFF;
+}
+
+.passport-link:hover {
 	background-color: #EF7820;
 	color           : #FFFFFF;
 }
@@ -663,21 +762,174 @@ header {
 	line-height    : normal;
 	border         : 1px solid #EF7820;
 	border-radius  : 3px;
-	margin-left    : 5px;
 }
 
 .owners-link:first-child {
 	margin-left: 0;
 }
 
-.registration-link {
-	margin-left : 0;
-	margin-right: 5px;
+.owners-link:nth-child(2) {
+	margin-left: 10px;
+}
+
+.owners-link:nth-child(3) {
+	margin-left: 5px;
+}
+
+.owners-link:nth-child(4) {
+	margin-left: 9px;
+}
+
+.registration-link,
+.state-link {
+	display              : flex;
+	width                : 61px;
+	height               : 40px;
+	flex-direction       : column;
+	justify-content      : center;
+	flex-shrink          : 0;
+	color                : #969696;
+	text-align           : center;
+	font-family          : Roboto;
+	font-size            : 13px;
+	font-style           : normal;
+	font-weight          : 400;
+	line-height          : normal;
+	border-radius        : 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius   : 3px;
+	-ms-border-radius    : 3px;
+	-o-border-radius     : 3px;
+	border               : 1px solid #EF7820
+}
+
+.state-link {
+	display        : flex;
+	width          : 81px;
+	height         : 40px;
+	flex-direction : column;
+	justify-content: center;
+	flex-shrink    : 0;
+	color          : #969696;
+	text-align     : center;
+	font-family    : Roboto;
+	font-size      : 13px;
+	font-style     : normal;
+	font-weight    : 400;
+	line-height    : normal;
+}
+
+.registration-link:nth-child(2) {
+	margin-left: 10px;
+}
+
+.registration-link:nth-child(3) {
+	margin-left: 7px;
+}
+
+.registration,
+.state {
+	width      : 262px;
+	height     : 40px;
+	color      : #000;
+	font-family: Roboto;
+	font-size  : 15px;
+	font-style : normal;
+	font-weight: 700;
+	line-height: normal;
+	display    : flex;
+	align-items: center;
+	margin-top : 8px;
+}
+
+.information-owners:nth-child(2) {
+	margin-left: 0;
 }
 
 .registration-link:last-child {
-
 	margin-right: 0;
+}
+
+.passport-link {
+	display        : flex;
+	flex-direction : column;
+	width          : 48px;
+	flex-shrink    : 0;
+	border         : 1px solid #EF7820;
+	height         : 40px;
+	border-radius  : 3px;
+	background     : #FFF;
+	justify-content: center;
+	align-items    : center;
+}
+
+.passport-link:nth-child(2) {
+	margin-left: 8px;
+}
+
+.passport-link:nth-child(3) {
+	margin-left: 5px;
+}
+
+.passport-link:nth-child(4) {
+	margin-left: 9px;
+}
+
+.state-links-block {
+	display: flex;
+}
+
+.state-link:nth-child(2) {
+	margin-left: 9px;
+}
+
+.state-link:nth-child(3) {
+	margin-left: 9px;
+}
+
+.wheel-link:nth-child(1) {
+	width                : 110px;
+	height               : 40px;
+	flex-shrink          : 0;
+	line-height          : normal;
+	border               : 1px solid #EF7820;
+	-webkit-border-radius: 3px;
+	-moz-border-radius   : 3px;
+	-ms-border-radius    : 3px;
+	-o-border-radius     : 3px;
+	margin-left          : 0;
+}
+
+.wheel-link:nth-child(1):hover,
+.wheel-link:nth-child(2):hover,
+.wheel-link:nth-child(3):hover {
+	background: #EF7820;
+	color     : #FFF;
+}
+
+
+
+.wheel-link:nth-child(2),
+.wheel-link:nth-child(3) {
+	display              : flex;
+	width                : 68px;
+	height               : 40px;
+	flex-direction       : column;
+	justify-content      : center;
+	flex-shrink          : 0;
+	color                : #969696;
+	text-align           : center;
+	font-family          : Roboto;
+	font-size            : 13px;
+	font-style           : normal;
+	font-weight          : 400;
+	line-height          : normal;
+	border               : 1px solid #EF7820;
+	border-radius        : 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius   : 3px;
+	-ms-border-radius    : 3px;
+	-o-border-radius     : 3px;
 }
 
 #body-car-select-item {
@@ -981,6 +1233,7 @@ header {
 	line-height     : normal;
 	background-color: #FECD00;
 	margin-right    : 14px;
+	border-radius   : 3px;
 }
 
 .call {
@@ -998,6 +1251,7 @@ header {
 	font-weight     : 400;
 	line-height     : normal;
 	background-color: #EF7820;
+	border-radius   : 3px;
 }
 
 .block-advertisement {
