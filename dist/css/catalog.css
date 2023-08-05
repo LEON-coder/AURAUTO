@@ -6,6 +6,15 @@
 	box-sizing: border-box;
 }
 
+body {
+	max-width     : 2560px;
+	margin        : 0 auto;
+	display       : flex;
+	flex-direction: column;
+	min-height    : 100vh;
+	overflow-x    : hidden;
+}
+
 input[type="text"] {
 	font-family: inherit;
 	/* 1 */
@@ -21,6 +30,7 @@ input[type="text"] {
 .checkbox-engine:nth-child(4) {
 	margin-top: 8px;
 }
+
 
 .ad {
 	display            : flex;
@@ -779,6 +789,7 @@ header {
 	width       : 298px;
 	flex-shrink : 0;
 	margin-right: 18px;
+	position    : relative;
 }
 
 .link-icon {
@@ -822,6 +833,23 @@ header {
 .car-offer:nth-child(12),
 .car-offer:nth-child(13) {
 	margin-top: 29px;
+}
+
+.car-offer:nth-child(6) {
+	margin-right: 18px;
+}
+
+.car-offer:nth-child(7),
+.car-offer:nth-child(12) {
+	margin-right: 0;
+}
+
+.car-offer:last-child {
+	margin-right: 0;
+}
+
+.car-offer:nth-child(5) {
+	margin-right: 0;
 }
 
 .car-picture-block {
@@ -979,15 +1007,24 @@ header {
 	border-radius: 7px;
 	background   : url(../images/catalog_page/block-advertisement/tinkoff.jpg), lightgray -11.399px -4.712px / 102.247% 103.834% no-repeat;
 	margin-top   : 29px;
+	margin-bottom: 29px;
 }
 
 .mobile-block-advertisements {
 	display: none;
 }
 
+.mobile-block-advertisement-1 {
+	display: none;
+}
+
+.mobile-block-advertisements-2 {
+	display: none;
+}
 
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1240px) {
 
 	.block-logo-category {
 		display    : flex;
@@ -1043,6 +1080,15 @@ header {
 		flex-wrap    : wrap;
 	}
 
+	.map-block,
+	.sorting-block,
+	.save-block {
+		display        : flex;
+		justify-content: center;
+		align-items    : center;
+		margin-top     : 10px;
+	}
+
 	.checkbox-filter-block {
 		display        : flex;
 		justify-content: center;
@@ -1057,6 +1103,11 @@ header {
 		flex-wrap : wrap;
 		margin-top: 31px;
 		width     : 100%;
+	}
+
+	.car-offer:nth-child(12) {
+		margin-right: 0;
+		margin-top  : 29px;
 	}
 
 	.car-offer:nth-child(2),
@@ -1117,7 +1168,7 @@ header {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
 	.block-logo-category {
 		display    : flex;
@@ -1215,6 +1266,23 @@ header {
 		margin-top  : 29px;
 	}
 
+	.car-offer:nth-child(4),
+	.car-offer:nth-child(5),
+	.car-offer:nth-child(6),
+	.car-offer:nth-child(7),
+	.car-offer:nth-child(8),
+	.car-offer:nth-child(9),
+	.car-offer:nth-child(10),
+	.car-offer:nth-child(11),
+	.car-offer:nth-child(12),
+	.car-offer:nth-child(13),
+	.car-offer:nth-child(14),
+	.car-offer:nth-child(15),
+	.car-offer:nth-child(16) {
+		margin-top  : 29px;
+		margin-right: 0;
+	}
+
 	.block-advertisement {
 		width        : 298px;
 		height       : 295px;
@@ -1235,23 +1303,33 @@ header {
 		width    : auto;
 	}
 
+	.logo__p {
+		letter-spacing: 0em;
+		text-align    : left;
+		color         : #FECD00;
+		font-family   : Roboto;
+		font-size     : 25px;
+		font-style    : normal;
+		font-weight   : 700;
+		line-height   : normal;
+		text-transform: uppercase;
+	}
+
+	.logo__span {
+		font-family   : Roboto;
+		font-size     : 25px;
+		font-style    : normal;
+		font-weight   : 700;
+		line-height   : normal;
+		text-transform: uppercase;
+	}
+
 	.block-logo-category {
 		display        : flex;
 		align-items    : center;
 		margin-top     : 0px px;
 		width          : 100%;
 		justify-content: space-between;
-	}
-
-	.logo__p {
-		color         : #FECD00;
-		font-family   : Roboto;
-		font-size     : 25px;
-		font-weight   : 700;
-		line-height   : 38px;
-		letter-spacing: 0em;
-		text-align    : left;
-		text-transform: uppercase;
 	}
 
 	.year-mobile {
@@ -1342,6 +1420,19 @@ header {
 		font-style           : normal;
 		font-weight          : 400;
 		line-height          : normal;
+	}
+
+	.body-car-select,
+	.checkbox-block {
+		width: 306px;
+	}
+
+	.information-owners-block,
+	.registration-block {
+		display       : flex;
+		flex-direction: column;
+		margin-top    : 8px;
+		width         : 306px;
 	}
 
 	.selector-mode-auto {
@@ -1448,6 +1539,10 @@ header {
 		line-height    : normal;
 		background     : #000000;
 		margin-left    : 22px;
+	}
+
+	.All-options {
+		display: none;
 	}
 
 	.models-block-describe {
@@ -1610,14 +1705,38 @@ header {
 
 	.car-offer__city {
 		padding-left: 14px;
+		padding-top : 20px;
 	}
 
 	.catalog-last-visit {
 		padding-left: 14px;
+		padding-top : 18px;
 	}
 
 	.block-models-auto__advertisements {
 		display: none;
+	}
+
+	.footer__ul {
+		font-family   : Roboto;
+		font-size     : 18px;
+		font-weight   : 400;
+		line-height   : 30px;
+		letter-spacing: 0em;
+		width         : 100%;
+		padding-left  : 0;
+	}
+
+	.footer__li {
+		margin-left: 135px;
+	}
+
+	.footer__p {
+		letter-spacing: 0em;
+		width         : 311px;
+		height        : auto;
+		font-size     : 17px;
+		line-height   : 25px;
 	}
 
 }
