@@ -10,7 +10,10 @@
 
 <body>
   <header>
-    <div class="ad"><img class="ad__img" src="../images/ad.png"></div>
+    <div class="ad">
+      <img class="ad__img" src="../images/ad.png">
+      <img class="ad__img-mobile" src="../images/catalog_page/header/ad-image-mobile.jpg">
+    </div>
     <div class="header__bottom">
       <div class="header__items">
         <ol class="header__items_inner block_inner">
@@ -28,12 +31,19 @@
       </div>
       <div class="header__list">
         <div class="header__list_inner block_inner">
-          <div class="logo">
-            <p class="logo__p">aur</p><span class="logo__span">auto</span>
+          <div class="block-logo-category">
+            <div class="logo">
+              <p class="logo__p">aur</p><span class="logo__span">auto</span>
+            </div>
+
+            <div class="category"><img class="category__img" src="../images/category.png">
+              <p class="category__p">Все категории</p>
+            </div>
           </div>
-          <div class="category"><img class="category__img" src="../images/category.png">
-            <p class="category__p">Все категории</p>
-          </div>
+
+
+
+
           <div class="search">
             <input class="search__input" placeholder="Поиск по объявлениям"><a class="search__button" href="#">Найти</a>
           </div>
@@ -90,14 +100,21 @@
             <input type="text" name="brand" class="common-block-input" placeholder="До, руб.">
           </div>
 
-          <label for="brand" class="label">Год выпуска</label>
-          <div class="block-items">
-            <input type="text" name="brand" class="common-block-input" placeholder="1960">
-            <input type="text" name="brand" class="common-block-input" placeholder="2023">
+          <div class="open-full-options">
+            <a class="show-link" href="">Показать</a>
+            <a class="full-filter" href="">Полный фильтр</a>
+
+
           </div>
 
-          <label for="brand" class="label">Коробка передач</label>
-          <input type="text" name="brand" id="text-area-input" placeholder="Любая">
+          <label for="brand" class="label year-mobile">Год выпуска</label>
+          <div class="block-items">
+            <input type="text" name="brand" class="common-block-input year-mobile" placeholder="1960">
+            <input type="text" name="brand" class="common-block-input year-mobile" placeholder="2023">
+          </div>
+
+          <label for="brand" class="label year-mobile">Коробка передач</label>
+          <input type="text" name="brand" id="text-area-input" class="year-mobile" placeholder="Любая">
 
           <div class="checkbox-block">
             <p class="checkbox-label-name">Привод</p>
@@ -404,6 +421,7 @@
             <div class="you-looked-car">
               <div сlass="you-looked-car__picture-block">
                 <img src="../images/catalog_page/you-looked-block/infinity.jpg">
+
                 <p class="name_car">Infiniti QX50, 2014</p>
                 <span class="cost">1 599 000 ₽</span>
                 <div class="location">Минск, Беларусь</div>
@@ -483,294 +501,498 @@
 
 
         <div class="cars-offers-block">
-
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-1.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
             </div>
 
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
-            <div class="block-message">
-              <a class="send-message" href="#">Сообщение</a>
-              <a class="call" href="#">Позвонить</a>
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+
+              <div class="block-message">
+                <a class="send-message" href="#">Сообщение</a>
+                <a class="call" href="#">Позвонить</a>
+              </div>
             </div>
-
           </div>
+
+
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-2.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
-
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
+
+
+
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+            </div>
+
             <div class="block-message">
               <a class="send-message" href="#">Сообщение</a>
               <a class="call" href="#">Позвонить</a>
             </div>
-
           </div>
+
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-3.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
-
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
+
+
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+            </div>
             <div class="block-message">
               <a class="send-message" href="#">Сообщение</a>
               <a class="call" href="#">Позвонить</a>
             </div>
           </div>
+
+
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-4.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
-
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
+
+
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+            </div>
             <div class="block-message">
               <a class="send-message" href="#">Сообщение</a>
               <a class="call" href="#">Позвонить</a>
             </div>
           </div>
+
+
+          <div class="mobile-block-advertisement-1">
+
+          </div>
+
+
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-5.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
-
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
 
-            <div class="block-message">
-              <a class="send-message" href="#">Сообщение</a>
-              <a class="call" href="#">Позвонить</a>
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+
+              <div class="block-message">
+                <a class="send-message" href="#">Сообщение</a>
+                <a class="call" href="#">Позвонить</a>
+              </div>
             </div>
           </div>
+
+
+
+
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-6.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
-
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
+
+
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+            </div>
 
             <div class="block-message">
               <a class="send-message" href="#">Сообщение</a>
               <a class="call" href="#">Позвонить</a>
             </div>
           </div>
+
+
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-7.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
-
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
+
+
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+            </div>
 
             <div class="block-message">
               <a class="send-message" href="#">Сообщение</a>
               <a class="call" href="#">Позвонить</a>
             </div>
           </div>
+
+          <div class="mobile-block-advertisements">
+
+          </div>
+
+
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-8.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
+
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+            </div>
 
             <div class="block-message">
               <a class="send-message" href="#">Сообщение</a>
               <a class="call" href="#">Позвонить</a>
             </div>
           </div>
+
+          <div class="mobile-block-advertisements-2">
+
+          </div>
+
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-9.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
-
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
+
+
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+            </div>
 
             <div class="block-message">
               <a class="send-message" href="#">Сообщение</a>
               <a class="call" href="#">Позвонить</a>
             </div>
           </div>
+
 
           <div class="block-advertisement">
 
           </div>
 
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-10.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
-
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
+
+
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+            </div>
 
             <div class="block-message">
               <a class="send-message" href="#">Сообщение</a>
               <a class="call" href="#">Позвонить</a>
             </div>
           </div>
+
+
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-11.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
-
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
+
+
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+            </div>
 
             <div class="block-message">
               <a class="send-message" href="#">Сообщение</a>
               <a class="call" href="#">Позвонить</a>
             </div>
           </div>
+
+
           <div class="car-offer">
-            <div class="car-picture-block">
+            <div class="car-picture__block-img">
               <img class="car-picture" src="../images/catalog_page/cars-offers-block/offer-car-12.png" alt="car">
 
-              <div class="like-block">
-                <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+              <div class="block-contacts-call">
+                <a href="#" class="telephone-icon">
+                  <img src="../images/catalog_page/mobile/telephone-icon.png" alt="phone">
+                </a>
+                <a href="#" class="chat-icon">
+                  <img src="../images/catalog_page/mobile/chat-icon.svg" alt="chat">
+                </a>
+                <a href="#" class="like-icon">
+                  <img src="../images/catalog_page/mobile/heart-icone.png" alt="heart-icone">
+                </a>
               </div>
-
             </div>
-            <p class="car-offer-brand">Infiniti QX50, 2014</p>
 
-            <div class="price">1 599 000 ₽</div>
-            <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
-            <div class="car-offer__city">Минск, Беларусь</div>
-            <div class="last-visit catalog-last-visit">1 час назад</div>
+
+            <div class="like-block">
+              <img class="icon" src="../images/catalog_page/cars-offers-block/heart-icon.png" alt="heart-icon">
+            </div>
+
+
+            <div class="you-looked-car__block-describe">
+              <p class="car-offer-brand">Infiniti QX50, 2014</p>
+              <div class="price">1 599 000 ₽</div>
+              <div class="desribe-car">151 213 км, 2.5 AT (222 л.с.), внедорожник, полный, бензин</div>
+              <div class="car-offer__city">Минск, Беларусь</div>
+              <div class="last-visit catalog-last-visit">1 час назад</div>
+            </div>
 
             <div class="block-message">
               <a class="send-message" href="#">Сообщение</a>
               <a class="call" href="#">Позвонить</a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-  </div>
 
 
-  <footer>
-    <div class="footer__inner block_inner">
-      <div class="footer__list">
-        <div class="logo">
-          <p class="logo__p">aur</p><span class="logo_theme_white logo__span">auto</span>
+
+
+
+    <footer>
+      <div class="footer__inner block_inner">
+        <div class="footer__list">
+          <div class="logo">
+            <p class="logo__p">aur</p><span class="logo_theme_white logo__span">auto</span>
+          </div>
+          <p class="footer__p">Политика конфиденциальности<br>2023 ©Все права защищены</p>
         </div>
-        <p class="footer__p">Политика конфиденциальности<br>2023 ©Все права защищены</p>
-      </div>
-      <ul class="footer__ul">
-        <li class="footer__li">О сайте</li>
-        <li class="footer__li">Стать партнером</li>
-        <li class="footer__li">Помощь</li>
-      </ul>
-      <div class="footer__list"><img class="footer__img" src="../images/google_play.png"><img class="footer__img"
-          src="../images/app_store.png"></div>
-      <div class="footer__list">
-        <div class="footer__p">Нужна помощь? Закажите бесплатную консультацию наших специалистов.Перезвоним через 15
-          минут.</div>
-        <div class="footer__search">
-          <input class="footer__search__input" placeholder="+7 (930) 900 - 131 - 22 - 12">
-          <button class="footer__search__button"><img class="footer__search__img"
-              src="../images/catalog_page/chevron 5.png"></button>
+        <ul class="footer__ul">
+          <li class="footer__li">О сайте</li>
+          <li class="footer__li">Стать партнером</li>
+          <li class="footer__li">Помощь</li>
+        </ul>
+        <div class="footer__list"><img class="footer__img" src="../images/google_play.png"><img class="footer__img"
+            src="../images/app_store.png"></div>
+        <div class="footer__list">
+          <div class="footer__p">Нужна помощь? Закажите бесплатную консультацию наших специалистов.Перезвоним
+            через
+            15
+            минут.</div>
+          <div class="footer__search">
+            <input class="footer__search__input" placeholder="+7 (930) 900 - 131 - 22 - 12">
+            <button class="footer__search__button"><img class="footer__search__img"
+                src="../images/catalog_page/chevron 5.png"></button>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 </body>
 <script type="text/javascript" src="../js/scripts.js"></script>

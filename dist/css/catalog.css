@@ -22,6 +22,28 @@ input[type="text"] {
 	margin-top: 8px;
 }
 
+.ad {
+	display            : flex;
+	width              : 100%;
+	background-position: center;
+}
+
+.ad__img {
+	width  : 100%;
+	display: none;
+}
+
+.ad__img-mobile {
+	height             : 130.002685546875px;
+	background         : url(../images/catalog_page/header/ad-image-mobile.jpg);
+	width              : 100%;
+	background-position: center;
+}
+
+
+.logo {
+	width: 177px;
+}
 
 .content_catalog {
 	display        : flex;
@@ -99,6 +121,10 @@ header {
 	width         : 262px;
 }
 
+.open-full-options {
+	display: none;
+}
+
 
 .models-block-describe {
 	display       : flex;
@@ -151,6 +177,12 @@ header {
 
 .you-looked-block__cars {
 	display: flex;
+}
+
+.you-looked-car__block-describe {
+	display       : flex;
+	flex-direction: column;
+	margin-left   : 11px;
 }
 
 .you-looked-car {
@@ -749,6 +781,23 @@ header {
 	margin-right: 18px;
 }
 
+.link-icon {
+	display: none;
+}
+
+.car-picture__block-img {
+	display       : flex;
+	flex-direction: column;
+}
+
+.car-picture-block {
+	display: none;
+}
+
+.car-offer__messangers-block {
+	display: none;
+}
+
 .cars-offers-block {
 	display   : flex;
 	flex-wrap : wrap;
@@ -800,7 +849,14 @@ header {
 	flex-shrink: 0;
 }
 
-.car-picture {}
+.block-contacts-call {
+	display: none;
+}
+
+.block-message {
+	display   : none;
+	margin-top: 5px;
+}
 
 .car-offer-brand {
 	display        : flex;
@@ -923,4 +979,645 @@ header {
 	border-radius: 7px;
 	background   : url(../images/catalog_page/block-advertisement/tinkoff.jpg), lightgray -11.399px -4.712px / 102.247% 103.834% no-repeat;
 	margin-top   : 29px;
+}
+
+.mobile-block-advertisements {
+	display: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.block-logo-category {
+		display    : flex;
+		align-items: center;
+		margin-top : 10px;
+	}
+
+	.content_catalog {
+		display        : flex;
+		flex-direction : column;
+		justify-content: center;
+		width          : 100%;
+		max-width      : 950px;
+		margin         : 0px auto;
+	}
+
+	.models-block-describe {
+		display       : flex;
+		flex-direction: column;
+		margin-left   : 48px;
+		width         : 640px;
+		margin-bottom : 88px;
+		flex-wrap     : wrap;
+	}
+
+	.models-block-wrap {
+		display        : flex;
+		width          : 100%;
+		flex-wrap      : wrap;
+		justify-content: space-between;
+	}
+
+	.you-looked-block {
+		display       : flex;
+		flex-direction: column;
+		width         : 100%;
+		flex-wrap     : wrap;
+	}
+
+	.you-looked-block__cars {
+		display  : flex;
+		flex-wrap: wrap;
+	}
+
+	.filters-block {
+		width        : 100%;
+		height       : auto;
+		flex-shrink  : 0;
+		border-radius: 3px;
+		background   : #EFEFEF;
+		margin-top   : 20px;
+		display      : flex;
+		flex-wrap    : wrap;
+	}
+
+	.checkbox-filter-block {
+		display        : flex;
+		justify-content: center;
+		align-items    : center;
+		margin-left    : 40px;
+		margin-top     : 20px;
+		margin-bottom  : 20px;
+	}
+
+	.cars-offers-block {
+		display   : flex;
+		flex-wrap : wrap;
+		margin-top: 31px;
+		width     : 100%;
+	}
+
+	.car-offer:nth-child(2),
+	.car-offer:nth-child(4),
+	.car-offer:nth-child(6),
+	.car-offer:nth-child(2) {
+		margin-right: 0;
+	}
+
+	.car-offer:nth-child(3),
+	.car-offer:nth-child(6),
+	.car-offer:nth-child(9),
+	.car-offer:nth-child(13) {
+		margin-right: 18px;
+		margin-top  : 29px;
+	}
+
+	.car-offer:nth-child(4),
+	.car-offer:nth-child(5),
+	.car-offer:nth-child(6),
+	.car-offer:nth-child(7),
+	.car-offer:nth-child(8),
+	.car-offer:nth-child(9),
+	.car-offer:nth-child(10),
+	.car-offer:nth-child(11),
+	.car-offer:nth-child(12),
+	.car-offer:nth-child(13) {
+		margin-top: 29px;
+	}
+
+	.block-advertisement {
+		width        : 100%;
+		height       : 295px;
+		flex-shrink  : 0;
+		border-radius: 7px;
+		background   : url(../images/catalog_page/block-advertisement/tinkoff.jpg), lightgray -11.399px -4.712px / 102.247% 103.834% no-repeat;
+		margin-top   : 29px;
+	}
+
+	.block_inner {
+		max-width     : 950px;
+		width         : 100%;
+		display       : flex;
+		flex-wrap     : wrap;
+		flex-direction: row;
+	}
+
+	.footer__list {
+		display        : flex;
+		flex-direction : column;
+		justify-content: center;
+		max-width      : 455px;
+		height         : 100%;
+		padding        : 45px 0;
+		margin-left    : auto;
+		margin-right   : auto;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.block-logo-category {
+		display    : flex;
+		align-items: center;
+		margin-top : 0px;
+	}
+
+	.header__bottom {
+		margin-top   : 15px;
+		padding-left : 10px;
+		padding-right: 10px;
+	}
+
+	.content_catalog {
+		padding-left : 10px;
+		padding-right: 10px;
+	}
+
+	.auto-belarus__wrap {
+		display: flex;
+		height : auto;
+	}
+
+	.auto-belarus {
+		width         : auto;
+		font-family   : Roboto;
+		font-size     : 30px;
+		font-weight   : 700;
+		line-height   : 65px;
+		letter-spacing: 0em;
+		text-align    : left;
+		color         : #000000;
+	}
+
+	.auto-belarus__total {
+		font-family   : Roboto;
+		font-size     : 38px;
+		font-weight   : 700;
+		line-height   : 65px;
+		letter-spacing: 0em;
+		text-align    : left;
+		color         : #FECD00;
+		margin-left   : 24px;
+	}
+
+	.block-models-auto-wrap {
+		display  : flex;
+		max-width: 750px;
+		width    : 100%;
+	}
+
+	.models-block-describe {
+		display       : flex;
+		flex-direction: column;
+		margin-left   : 48px;
+		width         : 57%;
+		margin-bottom : 88px;
+		flex-wrap     : wrap;
+	}
+
+	.you-looked-block__headline {
+		display        : flex;
+		width          : auto;
+		height         : 65px;
+		flex-direction : column;
+		justify-content: center;
+		flex-shrink    : 0;
+		color          : #000;
+		font-family    : Roboto;
+		font-size      : 20px;
+		font-style     : normal;
+		font-weight    : 700;
+		line-height    : normal;
+	}
+
+	.map-link {
+		margin-left : 0;
+		margin-right: 8px;
+	}
+
+	.map-block,
+	.sorting-block,
+	.save-block {
+		display        : flex;
+		justify-content: center;
+		align-items    : center;
+		margin-left    : 40px;
+	}
+
+	.car-offer:nth-child(2),
+	.car-offer:nth-child(4),
+	.car-offer:nth-child(6),
+	.car-offer:nth-child(2) {
+		margin-right: 0;
+		margin-top  : 29px;
+	}
+
+	.block-advertisement {
+		width        : 298px;
+		height       : 295px;
+		flex-shrink  : 0;
+		border-radius: 7px;
+		background   : url(../images/catalog_page/block-advertisement/tinkoff.jpg), lightgray -11.399px -4.712px / 102.247% 103.834% no-repeat;
+		margin-top   : 29px;
+	}
+}
+
+
+
+@media screen and (max-width: 425px) {
+
+	.logo {
+		cursor   : pointer;
+		font-size: 25px;
+		width    : auto;
+	}
+
+	.block-logo-category {
+		display        : flex;
+		align-items    : center;
+		margin-top     : 0px px;
+		width          : 100%;
+		justify-content: space-between;
+	}
+
+	.logo__p {
+		color         : #FECD00;
+		font-family   : Roboto;
+		font-size     : 25px;
+		font-weight   : 700;
+		line-height   : 38px;
+		letter-spacing: 0em;
+		text-align    : left;
+		text-transform: uppercase;
+	}
+
+	.year-mobile {
+		display: none;
+	}
+
+	.content-bread-wrap {
+		flex-grow     : 1;
+		display       : flex;
+		flex-direction: column;
+		width         : 100%;
+		height        : auto;
+	}
+
+	.auto-belarus__wrap {
+		display        : flex;
+		height         : auto;
+		justify-content: center;
+		flex-direction : column;
+		align-items    : center;
+	}
+
+	.block_inner {
+		max-width     : 340px;
+		width         : 100%;
+		display       : flex;
+		flex-wrap     : wrap;
+		flex-direction: row;
+	}
+
+	.block-models-auto-wrap {
+		display        : flex;
+		max-width      : 400px;
+		width          : 100%;
+		flex-direction : column;
+		justify-content: center;
+	}
+
+	.auto-belarus {
+		width      : 355px;
+		height     : 100px;
+		flex-shrink: 0;
+		color      : #000;
+		text-align : center;
+		font-family: Roboto;
+		font-size  : 32px;
+		font-style : normal;
+		font-weight: 700;
+		line-height: 50px;
+	}
+
+	.auto-belarus__total {
+		text-align : center;
+		font-size  : 32px;
+		font-style : normal;
+		font-weight: 700;
+		margin-left: 0;
+	}
+
+	.block-models-auto__selection-mode {
+		display        : flex;
+		flex-direction : column;
+		width          : 100%;
+		justify-content: center;
+		align-items    : center;
+		border-radius  : 15px;
+		background     : #FECD00;
+	}
+
+	.All-auto-button {
+		letter-spacing       : 0em;
+		-webkit-border-radius: 3px;
+		-moz-border-radius   : 3px;
+		-ms-border-radius    : 3px;
+		-o-border-radius     : 3px;
+		background-color     : #EF7820;
+		align-items          : center;
+		display              : flex;
+		width                : 306px;
+		height               : 40px;
+		flex-direction       : column;
+		justify-content      : center;
+		flex-shrink          : 0;
+		color                : #FFF;
+		text-align           : center;
+		font-family          : Roboto;
+		font-size            : 16px;
+		font-style           : normal;
+		font-weight          : 400;
+		line-height          : normal;
+	}
+
+	.selector-mode-auto {
+		display        : flex;
+		margin-top     : 20px;
+		justify-content: center;
+		width          : 100%;
+	}
+
+	.block-models-width {
+		width     : 262px;
+		margin-top: 44px;
+		height    : auto;
+		order     : -1;
+	}
+
+	.used-auto,
+	.new-auto {
+		color          : #969696;
+		text-align     : center;
+		font-family    : Roboto;
+		font-size      : 16px;
+		font-style     : normal;
+		font-weight    : 400;
+		line-height    : normal;
+		border         : 1px solid #969696;
+		border-radius  : 3px;
+		display        : flex;
+		width          : 146px;
+		height         : 40px;
+		flex-direction : column;
+		justify-content: center;
+		flex-shrink    : 0;
+		background     : #FFFFFF;
+	}
+
+	.new-auto {
+		margin-right: 13px;
+	}
+
+	.catalog-select-group__wrap {
+		display       : flex;
+		flex-direction: column;
+		margin-top    : 11px;
+		width         : 306px;
+	}
+
+	#text-area-input {
+		border-radius: 3px;
+		border       : 1px solid #969696;
+		background   : #FFF;
+		padding-left : 27px;
+		width        : 306px;
+		height       : 40px;
+		flex-shrink  : 0;
+	}
+
+	.common-block-input {
+		border-radius: 3px 0px 0px 3px;
+		border       : 1px solid #969696;
+		background   : #FFF;
+		padding-left : 27px;
+		width        : 152.5px;
+		height       : 40px;
+		flex-shrink  : 0;
+		box-sizing   : border-box;
+	}
+
+	.open-full-options {
+		display   : flex;
+		margin-top: 20px;
+	}
+
+	.show-link {
+		display        : flex;
+		width          : 143px;
+		height         : 40px;
+		flex-direction : column;
+		justify-content: center;
+		flex-shrink    : 0;
+		color          : #FFF;
+		text-align     : center;
+		font-family    : Roboto;
+		font-size      : 14px;
+		font-style     : normal;
+		font-weight    : 400;
+		line-height    : normal;
+		background     : #EF7820;
+	}
+
+	.full-filter {
+		display        : flex;
+		width          : 143px;
+		height         : 40px;
+		flex-direction : column;
+		justify-content: center;
+		flex-shrink    : 0;
+		color          : #FFF;
+		text-align     : center;
+		font-family    : Roboto;
+		font-size      : 14px;
+		font-style     : normal;
+		font-weight    : 400;
+		line-height    : normal;
+		background     : #000000;
+		margin-left    : 22px;
+	}
+
+	.models-block-describe {
+		margin-left  : 0;
+		width        : 100%;
+		margin-bottom: 40px;
+		max-width    : 340px;
+	}
+
+	.models-block-wrap {
+		width  : 100%;
+		display: none;
+	}
+
+	.you-looked-block__cars {
+		display  : flex;
+		flex-wrap: nowrap;
+	}
+
+	.filters-block {
+		display: none;
+	}
+
+	.car-offer {
+		width       : 100%;
+		flex-shrink : 0;
+		margin-right: 0;
+		display     : flex;
+		margin-top  : 42px;
+	}
+
+	.car-picture-block {
+		display    : flex;
+		position   : relative;
+		width      : 177px;
+		height     : 119px;
+		flex-shrink: 0;
+	}
+
+	.car-picture {
+		flex-shrink  : 0;
+		border-radius: 5px;
+		width        : 177px;
+		height       : 119px;
+	}
+
+	.like-block {
+		display: none;
+	}
+
+	.car-offer-brand {
+		width      : 167px;
+		height     : 33px;
+		flex-shrink: 0;
+	}
+
+	.block-advertisement {
+		display: none;
+	}
+
+	.mobile-block-advertisements {
+		display: none;
+	}
+
+	.mobile-block-advertisement-1 {
+		display            : flex;
+		width              : 100%;
+		height             : 120px;
+		flex-shrink        : 0;
+		border-radius      : 7px;
+		background         : url(../images/catalog_page/mobile/mobile-block-advertisement.png), lightgray -4.351px -1.917px / 102.247% 103.834% no-repeat;
+		background-position: center;
+		margin-top         : 28px;
+	}
+
+	.mobile-block-advertisements-2 {
+		display            : flex;
+		width              : 100%;
+		height             : 709px;
+		flex-shrink        : 0;
+		background         : url(../images/catalog_page/mobile/advertisements-sber.jpg);
+		background-position: center;
+		margin-top         : 40px;
+	}
+
+
+	.car-offer:nth-child(8) {
+		margin-bottom: 40px;
+	}
+
+
+	.desribe-car {
+		width      : 167px;
+		height     : 58px;
+		flex-shrink: 0;
+		font-size  : 12px;
+	}
+
+	.car-offer__messangers-block {
+		display: flex;
+	}
+
+	.car-picture-block-messages__wrap {
+		display       : flex;
+		flex-direction: column;
+	}
+
+	.car-picture__block-img {
+		display       : flex;
+		flex-direction: column;
+		width         : 177px;
+		height        : 179px;
+		flex-shrink   : 0;
+	}
+
+	.telephone-icon {
+		width          : 50px;
+		height         : 40px;
+		flex-shrink    : 0;
+		border-radius  : 3px;
+		background     : #EF7820;
+		display        : flex;
+		justify-content: center;
+		align-items    : center;
+		margin-right   : 20px;
+	}
+
+	.chat-icon {
+		width          : 50px;
+		height         : 40px;
+		flex-shrink    : 0;
+		border-radius  : 3px;
+		background     : #FECD00;
+		display        : flex;
+		justify-content: center;
+		align-items    : center;
+		margin-right   : 20px;
+	}
+
+	.like-icon {
+		width          : 50px;
+		height         : 40px;
+		flex-shrink    : 0;
+		border-radius  : 3px;
+		background     : #000;
+		display        : flex;
+		justify-content: center;
+		align-items    : center;
+	}
+
+	.block-contacts-call {
+		display   : flex;
+		margin-top: 20px;
+	}
+
+	.block-message {
+		display   : none;
+		margin-top: 5px;
+	}
+
+	.car-offer__city {
+		padding-left: 14px;
+	}
+
+	.catalog-last-visit {
+		padding-left: 14px;
+	}
+
+	.block-models-auto__advertisements {
+		display: none;
+	}
+
 }

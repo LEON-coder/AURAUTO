@@ -91,6 +91,16 @@
   outline: none;
 }
 
+.block-logo-category {
+  display    : flex;
+  align-items: center;
+  margin-top : 0px;
+}
+
+.logo {
+  width: 177px;
+}
+
 .logo {
   font-family   : Roboto;
   font-size     : 32px;
@@ -112,11 +122,6 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 1000px) {
-  .logo {
-    justify-content: center;
-  }
-}
 
 .logo__span {
   color         : black;
@@ -937,6 +942,10 @@ h1 {
 
 .ad__img {
   width: 100%;
+}
+
+.ad__img-mobile {
+  display: none;
 }
 
 #advantages {
@@ -1989,6 +1998,14 @@ h2 {
     margin-top   : 26px;
     padding-left : 10px;
     padding-right: 10px;
+  }
+
+  .ad {
+    display            : none;
+    height             : 130.002685546875px;
+    background         : url(../images/ad.png);
+    width              : 100%;
+    background-position: center;
   }
 
   .content {
