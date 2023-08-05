@@ -81,15 +81,23 @@
 
         <div class="catalog-select-group__wrap">
           <label for="brand" class="label">Марка</label>
-          <input type="text" name="brand" id="text-area-input">
+          <input type="text" name="brand" id="text-area-input" placeholder="Любая">
           <label for="model" class="label">Модель</label>
-          <input type="text" name="model" id="text-area-input">
+          <input type="text" name="model" id="text-area-input" placeholder="Любая">
           <label for="brand" class="label">Цена</label>
-          <input type="text" name="brand" id="text-area-input">
+          <div class="block-items">
+            <input type="text" name="brand" class="common-block-input" placeholder="Цена от">
+            <input type="text" name="brand" class="common-block-input" placeholder="До, руб.">
+          </div>
+
           <label for="brand" class="label">Год выпуска</label>
-          <input type="text" name="brand" id="text-area-input">
+          <div class="block-items">
+            <input type="text" name="brand" class="common-block-input" placeholder="1960">
+            <input type="text" name="brand" class="common-block-input" placeholder="2023">
+          </div>
+
           <label for="brand" class="label">Коробка передач</label>
-          <input type="text" name="brand" id="text-area-input">
+          <input type="text" name="brand" id="text-area-input" placeholder="Любая">
 
           <div class="checkbox-block">
             <p class="checkbox-label-name">Привод</p>
@@ -169,7 +177,26 @@
               <p class="owners">Владельцев по ПТС</p>
 
               <div class="owners-links-block">
-                <a class="owners-link no-matter" href="">Неважно</a>
+                <a class="owners-link" id="no-matter" href="">Неважно</a>
+                <a class="owners-link" href="">1</a>
+                <a class="owners-link" href="">2</a>
+                <a class="owners-link" href="">3+</a>
+              </div>
+            </div>
+            <div class="registration-block">
+              <p class="registration">Регистрация авто в ГИБДД</p>
+
+              <div class="registration-links-block">
+                <a class="owners-link" id="no-matter" href="">Неважно</a>
+                <a class="owners-link" href="">Есть</a>
+                <a class="owners-link" href="">Нет</a>
+              </div>
+            </div>
+            <div class="information-owners-block">
+              <p class="owners">Владельцев по ПТС</p>
+
+              <div class="owners-links-block">
+                <a class="owners-link" id="no-matter" href="">Неважно</a>
                 <a class="owners-link" href="">1</a>
                 <a class="owners-link" href="">2</a>
                 <a class="owners-link" href="">3+</a>
@@ -179,9 +206,62 @@
         </div>
 
 
+        <div class="body-car-select">
+          <label for="Тип кузова" class="label-body-car">Тип кузова</label>
+          <input type="text" name="brand" id="body-car-select-item" placeholder="Любой">
+          <label for="Количество мест" class="label-body-car">Количество мест</label>
+          <input type="text" name="model" id="body-car-select-item" placeholder="Любое">
+          <label for="brand" class="label-body-car">Объём багажника, л</label>
+          <div class="block-engine-force">
+            <input type="text" name="Расход топлива" id="fuel-consumption" placeholder="От">
+            <input type="text" name="Расход топлива" id="fuel-consumption" placeholder="До">
+          </div>
+          <label for="brand" class="label-body-car">Клиренс, мм</label>
+          <div class="block-engine-force">
+            <input type="text" name="Расход топлива" id="fuel-consumption" placeholder="От">
+            <input type="text" name="Расход топлива" id="fuel-consumption" placeholder="До">
+          </div>
+        </div>
+
+        <div class="information-owners-block">
+          <p class="owners">Руль</p>
+          <div class="owners-links-block">
+            <a class="owners-link wheel-left wheel-width " id="no-matter" href="">Неважно</a>
+            <a class="owners-link wheel-left wheel-width " href="">Левый</a>
+            <a class="owners-link wheel-left wheel-width " href="">Правый</a>
+          </div>
+        </div>
+
+        <div class="checkbox-block">
+          <p class="checkbox-label-name">Опции</p>
+          <div class="checkbox-selection-wrap">
+
+            <div class="checkbox-engine selection-item">
+              <input type="checkbox" value="Conditioner" name="selection" id="text-area-checkbox">
+              <label class="name-checkbox select-width-checkbox" for="selection"> Кондиционер </label>
+            </div>
+
+            <div class="checkbox-engine selection-item">
+              <input type="checkbox" value="Heated front seats" name="selection" id="text-area-checkbox">
+              <label class="name-checkbox select-width-checkbox" for="selection">Обогрев передних сидений </label>
+            </div>
 
 
+            <div class="checkbox-engine selection-item">
+              <input type="checkbox" value="ABS (Anti-lock system)" name="selection" id="text-area-checkbox">
+              <label class="name-checkbox select-width-checkbox" for="selection">ABS (Антиблокировочная система)
+              </label>
+            </div>
+
+            <a class="All-options" href="#">Все опции</a>
+
+          </div>
+        </div>
+        <div class="block-models-auto__advertisements">
+
+        </div>
       </div>
+
       <div class="models-block-describe">
 
         <div class="models-block-wrap">
@@ -691,6 +771,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 <script type="text/javascript" src="../js/scripts.js"></script>
 
