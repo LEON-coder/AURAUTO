@@ -1678,12 +1678,14 @@ header {
 
 	.body-car-select,
 	.checkbox-block {
-		width: 306px;
+		width  : 306px;
+		display: none;
 	}
+
 
 	.information-owners-block,
 	.registration-block {
-		display       : flex;
+		display       : none;
 		flex-direction: column;
 		margin-top    : 8px;
 		width         : 306px;
@@ -1732,6 +1734,7 @@ header {
 		flex-direction: column;
 		margin-top    : 11px;
 		width         : 306px;
+		margin-bottom : 44px;
 	}
 
 	#text-area-input {
@@ -1812,8 +1815,9 @@ header {
 	}
 
 	.you-looked-block__cars {
-		display  : flex;
-		flex-wrap: nowrap;
+		display   : flex;
+		flex-wrap : nowrap;
+		overflow-x: hidden;
 	}
 
 	.filters-block {
@@ -1825,7 +1829,7 @@ header {
 		flex-shrink : 0;
 		margin-right: 0;
 		display     : flex;
-		margin-top  : 42px;
+		margin-top  : 10px;
 	}
 
 	.car-picture-block {
@@ -1992,5 +1996,26 @@ header {
 		font-size     : 17px;
 		line-height   : 25px;
 	}
+
+
+
+	.show-more {
+		display: flex;
+	}
+
+	.offers__header {
+		display    : flex;
+		align-items: center;
+	}
+
+	.you-looked-block__arrow-headline-block {
+		display        : flex;
+		align-items    : center;
+		width          : 100%;
+		justify-content: space-between;
+		cursor         : pointer;
+	}
+
+
 
 }
