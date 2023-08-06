@@ -196,12 +196,6 @@
   background     : #EF7820;
 }
 
-@media (max-width: 1000px) {
-  .category {
-    background: black;
-  }
-}
-
 .category__img {
   max-width  : 35px;
   max-height : 35px;

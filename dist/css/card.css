@@ -1,3 +1,10 @@
+.logo-block-wrap {
+	display    : flex;
+	align-items: center;
+}
+
+
+
 .block_inner {
 	max-width    : 2560px;
 	margin       : 0px auto;
@@ -140,6 +147,7 @@
 .block-auto-car-information {
 	display       : flex;
 	flex-direction: column;
+	width         : 908px;
 }
 
 .block-car {
@@ -203,7 +211,7 @@
 .car-6 {
 	position: absolute;
 	top     : -10px;
-	left    : -564px;
+	left    : -568px;
 }
 
 .car-7 {
@@ -339,9 +347,13 @@
 	line-height    : normal;
 }
 
+.describe-text-mobile {
+	display: none;
+}
+
 .credit-conditions-block {
 	width      : 907px;
-	height     : 584px;
+	height     : 554px;
 	flex-shrink: 0;
 	color      : #000;
 	font-family: Roboto;
@@ -349,7 +361,6 @@
 	font-style : normal;
 	font-weight: 400;
 	line-height: 30px;
-	/* 187.5% */
 }
 
 .credit-conditions-block__item {
@@ -363,7 +374,7 @@
 .cars-offers-block {
 	display   : flex;
 	flex-wrap : wrap;
-	margin-top: 31px;
+	margin-top: 0px;
 }
 
 .car-offer:nth-child(3),
@@ -711,6 +722,11 @@
 	flex-direction: column;
 }
 
+
+.block-contacts-mobile {
+	display: none;
+}
+
 .contact-seller {
 	display        : flex;
 	width          : 270px;
@@ -738,6 +754,7 @@
 
 .write {
 	background: #EF7820;
+	margin-top: 0;
 }
 
 .call-to-seller {
@@ -791,8 +808,6 @@
 	line-height    : normal;
 }
 
-.block-location {}
-
 .block-location__metro-item {
 	color      : #000;
 	font-family: Roboto;
@@ -810,6 +825,7 @@
 .you-looked-block {
 	display       : flex;
 	flex-direction: column;
+	margin-top    : 20px;
 }
 
 .you-looked-block__headline {
@@ -900,9 +916,60 @@
 	margin-top : 15px;
 }
 
+.mobile-card-ad {
+	display: none;
+}
+
+.block-firm-name-mobile {
+	display: none;
+}
+
+.block-location-mobile {
+	display: none;
+}
+
+.you-looked-block-mobile {
+	display       : none;
+	flex-direction: column;
+}
+
+
+.block-advertisements-2 {
+	display          : flex;
+	width            : 100%;
+	height           : 709px;
+	flex-shrink      : 0;
+	background       : url(../images/card-page/sber-ad.png);
+	background-repeat: no-repeat;
+	margin-top       : 40px;
+}
+
+.you-looked-block-mobile {
+	display: none;
+}
+
+.mobile-block-advertisements-2 {
+	display          : none;
+	width            : 100%;
+	height           : 709px;
+	flex-shrink      : 0;
+	background       : url(../images/card-page/sber-ad.png);
+	background-repeat: no-repeat;
+	margin-top       : 40px;
+}
+
+
 
 
 @media screen and (max-width: 1200px) {
+
+	.logo-block-wrap {
+		display        : flex;
+		align-items    : center;
+		justify-content: space-between;
+		width          : 100%;
+	}
+
 	.header__list {
 		margin-top: 20px;
 	}
@@ -989,12 +1056,43 @@
 		height: 100%;
 	}
 
+	.logo-block-wrap {
+		display        : flex;
+		align-items    : center;
+		justify-content: space-between;
+		width          : 100%;
+	}
+
+	.block_inner {
+		max-width    : 2560px;
+		margin       : 0px auto;
+		padding-left : 20px;
+		padding-right: 20px;
+	}
+
+	.content-bread-wrap {
+		margin-top   : 15px;
+		padding-left : 25px;
+		padding-right: 25px;
+	}
+
+	.auto-belarus__wrap {
+		display        : flex;
+		justify-content: space-between;
+		width          : 100%;
+		padding-left   : 20px;
+		padding-right  : 20px;
+		flex-wrap      : wrap;
+		height         : auto;
+	}
+
 	.car-gallery {
-		display   : flex;
-		width     : 80%;
-		height    : auto;
-		margin-top: 9px;
-		flex-wrap : wrap;
+		display        : flex;
+		width          : 100%;
+		height         : auto;
+		margin-top     : 9px;
+		flex-wrap      : wrap;
+		justify-content: space-between;
 	}
 
 	.main-block-auto {
@@ -1018,7 +1116,7 @@
 	}
 
 	.car-img {
-		width          : 80%;
+		width          : 100%;
 		height         : auto;
 		justify-content: center;
 		align-items    : center;
@@ -1050,9 +1148,9 @@
 	}
 
 	.technical-describes-block-list {
-		display        : flex;
-		flex-wrap      : wrap;
-		justify-content: center;
+		display  : flex;
+		flex-wrap: wrap;
+		width    : 100%;
 	}
 
 	.block-car__technical-describes_headline {
@@ -1121,8 +1219,33 @@
 
 @media screen and (max-width: 425px) {
 
+	.logo-block-wrap {
+		display        : flex;
+		justify-content: space-between;
+		align-items    : center;
+		width          : 100%;
+	}
+
+	.category {
+		background : black;
+		width      : 178px;
+		height     : 50px;
+		flex-shrink: 0;
+	}
+
+	.category__p {
+		display        : flex;
+		width          : 111px;
+		height         : 35px;
+		flex-direction : column;
+		justify-content: center;
+		flex-shrink    : 0;
+		margin-left    : 10px;
+	}
+
 	.ad {
 		display: flex;
+		height : auto;
 	}
 
 	.ad__img {
@@ -1131,8 +1254,41 @@
 	}
 
 	.ad__img-mobile {
-		display: none;
+		display: flex;
 		width  : 100%;
+	}
+
+	.logo {
+		cursor: pointer;
+		width : auto;
+	}
+
+	.logo__p {
+		letter-spacing: 0em;
+		text-align    : left;
+		color         : #FECD00;
+		font-family   : Roboto;
+		font-size     : 25px;
+		font-style    : normal;
+		font-weight   : 700;
+		line-height   : normal;
+		text-transform: uppercase;
+	}
+
+	.logo__span {
+
+		font-family   : Roboto;
+		font-size     : 25px;
+		font-style    : normal;
+		font-weight   : 700;
+		line-height   : normal;
+		text-transform: uppercase;
+	}
+
+	.header__bottom {
+		margin-top   : 0px;
+		padding-left : 10px;
+		padding-right: 10px;
 	}
 
 	.block_inner {
@@ -1158,8 +1314,8 @@
 	}
 
 	.auto-belarus__wrap {
-		padding-left : 10px;
-		padding-right: 10px;
+		padding-left : 0px;
+		padding-right: 0px;
 		flex-wrap    : wrap;
 		height       : auto;
 		margin-bottom: 20px;
@@ -1171,6 +1327,7 @@
 		height       : auto;
 		line-height  : 45px;
 		margin-bottom: 40px;
+		margin-top   : 40px;
 	}
 
 	.auto-belarus__total {
@@ -1185,6 +1342,11 @@
 		padding-right: 0px;
 	}
 
+	.block-location-mobile {
+		display       : flex;
+		flex-direction: column;
+	}
+
 	.car-block {
 		display      : flex;
 		position     : relative;
@@ -1194,9 +1356,18 @@
 		margin-bottom: 10px;
 	}
 
+	.describe-text-mobile {
+		width        : auto;
+		text-align   : left;
+		margin-right : auto;
+		height       : auto;
+		margin-top   : 50px;
+		margin-bottom: 20px;
+		display      : flex;
+	}
+
 	.describe-text {
 		display        : flex;
-		width          : auto;
 		height         : 97px;
 		flex-direction : column;
 		justify-content: center;
@@ -1207,11 +1378,13 @@
 		font-style     : normal;
 		font-weight    : 700;
 		line-height    : normal;
+		width          : 100%;
+		margin-top     : 37px;
 	}
 
 	.all-ad-company-mobile {
 		display        : flex;
-		width          : 354px;
+		width          : 100%;
 		height         : 56px;
 		flex-direction : column;
 		justify-content: center;
@@ -1223,8 +1396,9 @@
 		font-style     : normal;
 		font-weight    : 400;
 		line-height    : normal;
-		background     : #EF7820;
 		margin-top     : 45px;
+		border-radius  : 6px;
+		background     : #EF7820;
 	}
 
 	.block-car {
@@ -1271,6 +1445,7 @@
 		width     : 100%;
 		height    : 22px;
 		text-align: left;
+		margin-top: 20px;
 	}
 
 	.block-car__technical-describes_headline {
@@ -1381,19 +1556,17 @@
 	}
 
 	.similar-ads {
-		display        : flex;
-		width          : auto;
-		height         : 97px;
-		flex-direction : column;
-		justify-content: center;
-		flex-shrink    : 0;
-		color          : #000;
-		font-family    : Roboto;
-		font-size      : 32px;
-		font-style     : normal;
-		margin-top     : 70px;
-		font-weight    : 700;
-		line-height    : normal;
+		width     : auto;
+		height    : 97px;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.similar-ads-block {
+		display       : flex;
+		flex-direction: column;
+		width         : 100%;
+		margin-bottom : 30px;
 	}
 
 	.block-contacts {
@@ -1406,8 +1579,8 @@
 		display       : flex;
 		flex-direction: column;
 		order         : 0;
-		margin-top    : 50px;
-		width         : 354px;
+		margin-top    : 20px;
+		width         : 100%;
 	}
 
 	.contact-seller {
@@ -1420,6 +1593,18 @@
 		width  : 90%;
 		order  : -1;
 		display: none;
+	}
+
+	.mobile-card-ad {
+		width            : 100%;
+		flex-shrink      : 0;
+		background       : url(../images/catalog_page/mobile/mobile-block-advertisement.png);
+		background-repeat: no-repeat;
+		margin-top       : 40px;
+		order            : 0;
+		display          : flex;
+		height           : 120px;
+		flex-shrink      : 0;
 	}
 
 	.mobile-block-advertisements-2 {
@@ -1453,13 +1638,17 @@
 	}
 
 	.footer__p {
-		color      : #FFF;
-		font-family: Roboto;
-		font-size  : 17px;
-		font-style : normal;
-		font-weight: 400;
-		line-height: 29px;
-		width      : auto;
+		margin-top   : 0px;
+		width        : 311px;
+		height       : 138px;
+		flex-shrink  : 0;
+		color        : #FFF;
+		font-family  : Roboto;
+		font-size    : 17px;
+		font-style   : normal;
+		font-weight  : 400;
+		line-height  : 25px;
+		margin-bottom: 10px;
 	}
 
 	.footer__search {
@@ -1473,5 +1662,19 @@
 	.footer__policy {
 		font-size : 17px;
 		text-align: center;
+	}
+
+	.footer__inner {
+		display        : flex;
+		height         : auto;
+		flex-direction : row;
+		flex-wrap      : wrap;
+		justify-content: center;
+		padding        : 0;
+		padding-bottom : 81px;
+	}
+
+	.you-looked-block-mobile {
+		display: none;
 	}
 }
