@@ -7,12 +7,12 @@
 }
 
 body {
-	max-width     : 2560px;
 	margin        : 0 auto;
 	display       : flex;
 	flex-direction: column;
 	min-height    : 100vh;
-	overflow-x    : hidden;
+	width         : 100%;
+	overflow      : auto;
 }
 
 input[type="text"] {
@@ -1924,14 +1924,15 @@ header {
 	}
 
 	.mobile-block-advertisement-1 {
-		display            : flex;
-		width              : 100%;
-		height             : 120px;
-		flex-shrink        : 0;
-		border-radius      : 7px;
-		background         : url(../images/catalog_page/mobile/mobile-block-advertisement.png), lightgray -4.351px -1.917px / 102.247% 103.834% no-repeat;
-		background-position: center;
-		margin-top         : 28px;
+		display        : flex;
+		width          : 100%;
+		height         : 120px;
+		flex-shrink    : 0;
+		border-radius  : 7px;
+		background     : url(../images/catalog_page/mobile/mobile-block-advertisement.png) no-repeat;
+		margin-top     : 28px;
+		justify-content: center;
+		align-items    : center;
 	}
 
 	.mobile-block-advertisements-2 {
@@ -1942,6 +1943,7 @@ header {
 		background         : url(../images/catalog_page/mobile/advertisements-sber.jpg);
 		background-position: center;
 		margin-top         : 40px;
+		background-repeat  : no-repeat;
 	}
 
 
@@ -2072,6 +2074,33 @@ header {
 		width          : 100%;
 		justify-content: space-between;
 		cursor         : pointer;
+	}
+
+	.price {
+		display        : flex;
+		width          : auto;
+		height         : 19px;
+		flex-direction : column;
+		justify-content: center;
+		flex-shrink    : 0;
+		color          : #000;
+		font-family    : Roboto;
+		font-size      : 16px;
+		font-style     : normal;
+		font-weight    : 800;
+		line-height    : 20px;
+	}
+
+	.car-offer__city {
+		padding-left: 14px;
+		padding-top : 20px;
+		width       : auto;
+	}
+
+	.catalog-last-visit {
+		padding-left: 14px;
+		padding-top : 18px;
+		width       : auto;
 	}
 
 

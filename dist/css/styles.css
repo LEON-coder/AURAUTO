@@ -1683,6 +1683,42 @@ h2 {
     width: 100%;
   }
 
+  .category {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    padding        : 20px;
+    border-radius  : 6px;
+    background     : #000;
+    margin-left    : auto;
+    width          : 178px;
+    height         : 50px;
+    flex-shrink    : 0;
+  }
+
+  .category__p {
+    display        : flex;
+    width          : 111px;
+    height         : 35px;
+    flex-direction : column;
+    justify-content: center;
+    flex-shrink    : 0;
+    color          : #FFF;
+    font-family    : Roboto;
+    font-size      : 16px;
+    font-style     : normal;
+    font-weight    : 400;
+    line-height    : normal;
+    margin-left    : 10px;
+  }
+
+  .block-logo-category {
+    display    : flex;
+    align-items: center;
+    margin-top : 0px;
+    width      : 100%;
+  }
+
   .header__bottom {
     margin-top   : 26px;
     padding-left : 10px;
@@ -2001,7 +2037,7 @@ h2 {
     justify-content: space-around;
     align-items    : center;
     padding        : 20px;
-    width          : 178px;
+    width          : 195px;
     height         : 56px;
     flex-shrink    : 0;
     border-radius  : 6px;
