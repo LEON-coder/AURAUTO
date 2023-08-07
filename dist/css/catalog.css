@@ -1806,7 +1806,7 @@ header {
 		margin-left  : 0;
 		width        : 100%;
 		margin-bottom: 40px;
-		max-width    : 340px;
+		max-width    : 425px;
 	}
 
 	.models-block-wrap {
@@ -1818,6 +1818,11 @@ header {
 		display   : flex;
 		flex-wrap : nowrap;
 		overflow-x: hidden;
+		width     : 100%;
+	}
+
+	.you-looked-block__cars::-webkit-scrollbar {
+		display: none;
 	}
 
 	.filters-block {
