@@ -1903,7 +1903,7 @@ header {
 	}
 
 	.slider-looked__slider-car {
-		width      : 170px;
+		width      : 160px;
 		height     : 108px;
 		flex-shrink: 0;
 	}
@@ -2142,15 +2142,15 @@ header {
 	}
 
 	.offers__slider .slider__container .slider__item:nth-child(3) {
-		margin-left: calc(50% - 225px);
+		margin-left: calc(50% - 170px);
 	}
 
 	.offers__slider .slider__container .slider__item:nth-child(4) {
-		margin-left: 37%;
+		margin-left: 52%;
 	}
 
 	.offers__slider .slider__container .slider__item:nth-child(5) {
-		margin-left: 92%;
+		margin-left: 100%;
 	}
 
 	.slider-looked {
