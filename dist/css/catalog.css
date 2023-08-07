@@ -1308,6 +1308,10 @@ header {
 	display: none;
 }
 
+.block_inner-slider {
+	display: none;
+}
+
 
 
 @media screen and (max-width: 1240px) {
@@ -1441,6 +1445,10 @@ header {
 		flex-direction: row;
 	}
 
+	.block_inner-slider {
+		display: none;
+	}
+
 	.footer__list {
 		display        : flex;
 		flex-direction : column;
@@ -1450,6 +1458,7 @@ header {
 		padding        : 45px 0;
 		margin-left    : auto;
 		margin-right   : auto;
+		padding-top    : 0;
 	}
 }
 
@@ -1471,6 +1480,10 @@ header {
 	.content_catalog {
 		padding-left : 10px;
 		padding-right: 10px;
+	}
+
+	.content-bread-wrap {
+		width: 100%;
 	}
 
 	.auto-belarus__wrap {
@@ -1577,6 +1590,17 @@ header {
 		background   : url(../images/catalog_page/block-advertisement/tinkoff.jpg), lightgray -11.399px -4.712px / 102.247% 103.834% no-repeat;
 		margin-top   : 29px;
 	}
+
+	.offers__header {
+		width    : 95%;
+		margin   : 0 auto;
+		flex-wrap: wrap;
+		display  : none;
+	}
+
+	.block_inner-slider {
+		display: none;
+	}
 }
 
 
@@ -1591,18 +1615,11 @@ header {
 
 	.logo__p {
 		letter-spacing: 0em;
-		text-align    : left;
-		color         : #FECD00;
-		font-family   : Roboto;
-		font-size     : 25px;
-		font-style    : normal;
-		font-weight   : 700;
-		line-height   : normal;
-		text-transform: uppercase;
+		text-align    : center;
 	}
 
 	.logo__span {
-		color         : white;
+		color         : #000;
 		font-family   : Roboto;
 		font-size     : 25px;
 		font-style    : normal;
@@ -1623,23 +1640,36 @@ header {
 		display: none;
 	}
 
+	.search__input {
+		padding-left: 8px;
+	}
+
 	.content-bread-wrap {
 		flex-grow     : 1;
-		display       : flex;
+		display       : none;
 		flex-direction: column;
 		width         : 100%;
 		height        : auto;
 	}
 
 	.auto-belarus__wrap {
-		display        : flex;
-		height         : auto;
-		justify-content: center;
-		flex-direction : column;
-		align-items    : center;
+		flex-direction: column;
+		align-items   : center;
+		margin-top    : 38px;
 	}
 
-	.block_inner {
+	.main__country_img {
+		width       : 40px;
+		height      : 40px;
+		flex-shrink : 0;
+		margin-right: 16px;
+	}
+
+	.main__country_img:nth-child(4) {
+		margin-right: 0;
+	}
+
+	.block_inner-slider {
 		width        : 100%;
 		padding-left : 0px;
 		padding-right: 0px;
@@ -1708,6 +1738,7 @@ header {
 		align-items    : center;
 		border-radius  : 15px;
 		background     : #FECD00;
+		margin-bottom  : 20px;
 	}
 
 	.All-auto-button {
@@ -1756,10 +1787,11 @@ header {
 	}
 
 	.block-models-width {
-		width     : 262px;
-		margin-top: 44px;
-		height    : auto;
-		order     : -1;
+		width        : auto;
+		margin-top   : 44px;
+		height       : auto;
+		order        : -1;
+		margin-bottom: 18px;
 	}
 
 	.used-auto,
@@ -1789,7 +1821,7 @@ header {
 	.catalog-select-group__wrap {
 		display       : flex;
 		flex-direction: column;
-		margin-top    : 11px;
+		margin-top    : 0px;
 		width         : 306px;
 		margin-bottom : 44px;
 	}
@@ -1834,6 +1866,7 @@ header {
 		font-style     : normal;
 		font-weight    : 400;
 		line-height    : normal;
+		border-radius  : 6px;
 		background     : #EF7820;
 	}
 
@@ -1853,6 +1886,7 @@ header {
 		line-height    : normal;
 		background     : #000000;
 		margin-left    : 22px;
+		border-radius  : 6px;
 	}
 
 	.All-options {
@@ -1951,6 +1985,7 @@ header {
 		margin-top     : 28px;
 		justify-content: center;
 		align-items    : center;
+		background-size: cover;
 	}
 
 	.mobile-block-advertisements-2 {
@@ -2062,8 +2097,18 @@ header {
 		padding-left  : 0;
 	}
 
+	.footer__list {
+		padding-top   : 32px;
+		padding-bottom: 0px;
+	}
+
 	.footer__li {
 		margin-left: 135px;
+	}
+
+	.footer__img:nth-child(2) {
+		width     : 243px;
+		margin-top: 20px;
 	}
 
 	.footer__p {
@@ -2072,9 +2117,9 @@ header {
 		height        : auto;
 		font-size     : 17px;
 		line-height   : 25px;
+		margin-bottom : 40px;
+		margin-top    : 0;
 	}
-
-
 
 	.show-more {
 		display: flex;
@@ -2160,8 +2205,9 @@ header {
 	}
 
 	#offers {
-		width : 100%;
-		margin: 0;
+		width  : 100%;
+		margin : 0;
+		display: contents;
 	}
 
 	.offers__header {
@@ -2191,6 +2237,12 @@ header {
 		top            : 50%;
 		transform      : translateY(-50%);
 		transition     : all 0.5s ease;
+	}
+
+	.content_catalog {
+		padding-left : 10px;
+		padding-right: 10px;
+		margin-bottom: 60px;
 	}
 
 
