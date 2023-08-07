@@ -1641,8 +1641,8 @@ header {
 
 	.block_inner {
 		width        : 100%;
-		padding-left : 10px;
-		padding-right: 10px;
+		padding-left : 0px;
+		padding-right: 0px;
 	}
 
 	.common-block-input-left {
@@ -1862,7 +1862,7 @@ header {
 	.models-block-describe {
 		margin-left  : 0;
 		width        : 100%;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		max-width    : 425px;
 	}
 
@@ -1891,7 +1891,15 @@ header {
 		flex-shrink : 0;
 		margin-right: 0;
 		display     : flex;
-		margin-top  : 10px;
+		margin-top  : 0px;
+	}
+
+	.you-looked-car__picture-block {
+		width        : 170px;
+		height       : 108px;
+		flex-shrink  : 0;
+		border-radius: 5px;
+
 	}
 
 	.car-picture-block {
@@ -1914,7 +1922,7 @@ header {
 	}
 
 	.car-offer-brand {
-		width      : 167px;
+		width      : auto;
 		height     : 33px;
 		flex-shrink: 0;
 	}
@@ -1956,7 +1964,7 @@ header {
 	}
 
 	.desribe-car {
-		width      : 167px;
+		width      : auto;
 		height     : 58px;
 		flex-shrink: 0;
 		font-size  : 12px;
@@ -2106,13 +2114,6 @@ header {
 		width       : auto;
 	}
 
-	.offers__header {
-		width          : 95%;
-		margin         : 0 auto;
-		flex-wrap      : wrap;
-		justify-content: space-between;
-	}
-
 	.offers__slider .slider__container {
 		height   : 208px;
 		margin   : 0 auto;
@@ -2126,6 +2127,54 @@ header {
 		margin         : 0px 0;
 	}
 
+	.offers__slider .slider__container .slider__item:nth-child(1) {
+		margin-left: -100%;
+	}
+
+	.offers__slider .slider__container .slider__item:nth-child(2) {
+		margin-left: -100%;
+	}
+
+	.offers__slider .slider__container .slider__item:nth-child(3) {
+		margin-left: calc(50% - 225px);
+	}
+
+	.offers__slider .slider__container .slider__item:nth-child(4) {
+		margin-left: 37%;
+	}
+
+	.offers__slider .slider__container .slider__item:nth-child(5) {
+		margin-left: 92%;
+	}
+
+	.slider-looked {
+		margin   : 0px auto;
+		width    : 100%;
+		max-width: 425px;
+	}
+
+	#offers {
+		width : 100%;
+		margin: 0;
+	}
+
+	.offers__header {
+		width          : 100%;
+		margin         : 0 auto;
+		flex-wrap      : wrap;
+		justify-content: space-between;
+	}
+
+	.slider-looked-wrap {
+		display        : flex;
+		justify-content: space-between;
+		align-items    : center;
+		margin         : 0px 0;
+		height         : 210px;
+		width          : 100%;
+		padding-left   : 0px;
+		padding-right  : 0px;
+	}
 
 
 }
