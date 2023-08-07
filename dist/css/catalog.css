@@ -1902,6 +1902,12 @@ header {
 
 	}
 
+	.slider-looked__slider-car {
+		width      : 170px;
+		height     : 108px;
+		flex-shrink: 0;
+	}
+
 	.car-picture-block {
 		display    : flex;
 		position   : relative;
@@ -2174,6 +2180,17 @@ header {
 		width          : 100%;
 		padding-left   : 0px;
 		padding-right  : 0px;
+	}
+
+	.slider__item {
+		display        : flex;
+		justify-content: center;
+		width          : 170px;
+		margin-left    : 200%;
+		position       : absolute;
+		top            : 50%;
+		transform      : translateY(-50%);
+		transition     : all 0.5s ease;
 	}
 
 
