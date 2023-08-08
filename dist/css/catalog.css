@@ -2934,3 +2934,15 @@ header {
 
 
 }
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+
+	.offers__slider .slider__container .slider__item:nth-child(3) {
+		margin-left: calc(50% - 177px);
+	}
+
+	.offers__slider .slider__container .slider__item:nth-child(4) {
+		margin-left: 53%;
+	}
+
+}
